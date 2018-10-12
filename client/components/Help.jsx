@@ -1,4 +1,5 @@
 import React from "react";
+import Cart from "./Cart";
 
 class Help extends React.Component {
   render() {
@@ -20,6 +21,7 @@ class Help extends React.Component {
           meeting. The intended effect of this App is to make meeting attendees
           aware of how much this time is costing the business.
         </p>
+        <Cart />
       </div>
     );
   }
