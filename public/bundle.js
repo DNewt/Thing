@@ -14149,6 +14149,7 @@ function confirm_shop(cart) {
     dispatch(loading());
     return (0, _api2.default)('post', 'cart/save', cart).then(function (response) {
       console.log(response);
+      //the data is now coming back to here ! check the chrome dev tools 
     }).catch(function (err) {
       dispatch(loginError(err.response.body.message));
     });
